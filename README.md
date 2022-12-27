@@ -51,3 +51,4 @@ MYSQL
 ## 개발에 소요된 물품 및 준비물
 
 # 프로젝트 진행 과정(월별 진행상황)
+<img src="source/img/KakaoTalk_20221227_110313599.png">
