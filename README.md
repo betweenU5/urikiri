@@ -15,3 +15,26 @@
 # 팀 소개
 
 ## 사진
+
+## 이름
+김창환<br>
+송진섭<br>
+이준환<br>
+임재현
+
+## 이메일
+김창환 : imnews0772@daum.net<br>
+송진섭 : sjs335946@gmail.com<br>
+이준환 : wnsghks1026@naver.com<br>
+임재현 : ｋａｋａｒｏ１０２９＠ｎａｖｅｒ。ｃｏｍ
+## 역할
+디자인 : 김창환 <br>
+프론트 : 임재현 <br>
+백엔드 : 임재현, 이준환 <br>
+모바일 : 송진섭<br>
+
+## 깃허브
+김창환 : <a href="https://github.com/Takoyaa">Takoyaa</a><br>
+송진섭 : <a href="https://github.com/sjs335946">sjs335946</a><br>
+이준환 : <a href=https://github.com/Shell-by">Shell-by</a><br>
+임재현 : <a href=https://github.com/reproduce0529">reproduce0529</a><br>
