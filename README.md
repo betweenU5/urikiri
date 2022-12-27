@@ -36,5 +36,5 @@
 ## 깃허브
 김창환 : <a href="https://github.com/Takoyaa">Takoyaa</a><br>
 송진섭 : <a href="https://github.com/sjs335946">sjs335946</a><br>
-이준환 : <a href=https://github.com/Shell-by">Shell-by</a><br>
-임재현 : <a href=https://github.com/reproduce0529">reproduce0529</a><br>
+이준환 : <a href="https://github.com/Shell-by">Shell-by</a><br>
+임재현 : <a href="https://github.com/reproduce0529">reproduce0529</a><br>
