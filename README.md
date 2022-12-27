@@ -38,3 +38,16 @@
 송진섭 : <a href="https://github.com/sjs335946">sjs335946</a><br>
 이준환 : <a href="https://github.com/Shell-by">Shell-by</a><br>
 임재현 : <a href="https://github.com/reproduce0529">reproduce0529</a><br>
+
+# 사용 기술
+
+## 개발에 사용한 기술
+HTML<br>
+CSS<br>
+JAVASCRIPT<br>
+PHP<br>
+MYSQL
+
+## 개발에 소요된 물품 및 준비물
+
+# 프로젝트 진행 과정(월별 진행상황)
