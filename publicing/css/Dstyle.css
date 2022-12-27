@@ -1,0 +1,945 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+/*폰트*/
+
+@font-face {
+    font-family: 'LeferiPoint-WhiteObliqueA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MonoplexKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-kr@1.0/MonoplexKR-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NanumBarunpen';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumBarunpen.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*헤더*/
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+@media (min-width: 1024px) {
+    .Boxbox{
+        background-color: #eee;
+    }
+    .chatingViewBox{
+        width: 1024px !important;
+        margin: auto;
+    }
+
+
+    .MassageInput{
+        width: 1024px !important;
+        margin: auto;
+    }
+}
+a{
+    text-decoration: none;
+    color: black;
+
+}
+a:active{
+    text-decoration: none;
+    color: black;
+    
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.Boxbox{
+    
+    max-height: 100%;
+    width: 100%;
+    height: 93%;
+    position : relative;
+    overflow-y: hidden;
+}
+
+.header{
+    display: block;
+    width: 100%;
+    height: 7%;
+
+    overflow : hidden;
+
+    position: relative;
+    font-family: GmarketSansMedium;
+    font-weight: normal;
+    box-shadow: 0 0 10px  rgba(0,0,0,0.1);
+    
+
+}
+.HashtagBox{
+    display : block;
+    margin: auto;
+    width: 90%;
+    height : 30px;
+    margin-top: 10px;
+    text-align: left;
+    
+}
+
+.HashtagBox a{
+    display: inline-block;
+    color: #888;
+    font-family: NanumBarunpen;
+}
+
+.TextAreaBox{
+    resize: none;
+    width: 90%;
+    height: 250px;
+    margin-top: 30px;
+    display: block;
+    margin: auto;
+    font-family: MonoplexKR-Regular;
+    background-color: white;
+}
+
+.board_card .title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.cardHeaderIMgBox{
+    display: flex;
+    justify-content: start;
+}
+.InformationTextBox{
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    height: min-content;
+    margin-top: 17px;
+    padding: 5px;
+    margin-left: 15px;
+    text-align : left;
+}
+.header h3{
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+
+.SearchListBox{
+
+    width: 80%;
+    padding: 20px;
+    height: 300px;
+    margin: auto;
+    box-shadow: 0 0 1px rgba(0,0,0, .3)
+}
+
+.SearchListBox label{
+    float: left;
+    font-size: 0.8rem;
+    padding-left: 20px;
+}
+.SelectUserImg{
+    width: 100px;
+    height : 30px;
+    background-color: #5E91FC;
+    color : white;
+    font-family: NanumBarunpen;
+    line-height: 30px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+.SearchListBox a{
+    display: block;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    box-shadow: 0 0 1px rgba(0,0,0, .1)
+}
+.title{
+    font-weight: lighter;
+    font-family: NanumBarunpen;
+    
+}
+.text{
+    font-family: Pretendard-Regular;
+}
+.header h4{
+    padding-left: 15px;
+    padding-top: 20px;
+    
+}
+
+.header .icon{
+    display: block;
+    width: 25px;
+    height : 25px;
+    margin: auto;
+    position: absolute;
+    padding-top: 10px;
+    top : 5px;
+    right : 10px;
+    
+}
+
+.boardBox{
+    width: 100%;
+    overflow-y: scroll;
+    background-color: #f8f8f8;
+}
+
+#boardBox{
+    padding-top: 50px;
+}
+#ColorGray{
+    background-color: #f3f4f5;
+}
+
+.board_card{
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-top: 12px;
+    margin-bottom: 32px;
+    background-color: white;
+    
+    padding : 6px;
+    height: 500px;
+    border-radius: 4px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+
+}
+.ShowButton label{
+    font-size: 0.4rem;
+}
+.cardTitle{
+    font-family: leferiPoint-WhiteObliqueA; 
+    font-weight: bold;
+    margin-top : 20px;
+    text-align: left;
+    padding-left: 42px;
+}
+.header .ss{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top : 15%;
+    left: 20px;
+
+}
+.header p{
+    font-family: GmarketSansMedium;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+.ShowButton{
+    width: 100px;
+    height: 40px;
+    border: none;
+    box-shadow: 0 0 10px  rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    margin-top: 20px;
+    font-family: Pretendard-Regular;
+    background-color: #5E91FC;
+    color: white;
+    font-size: 1.02rem;
+}
+.chatingViewBox{
+    background-color: white;
+    height: 90%;
+    width: 100%;
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+
+}
+
+.chatingViewBox2{
+    height: 90%;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+@keyframes ClickMe{
+    0%{
+        transform: scale(1)
+    }
+
+    30%{
+        transform: scale(1.1);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+.FindMeButton{
+    width : 40%;
+    height : 45px;
+    border : none;
+    border-radius : 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    background-color : #5E91FC;
+    color : white;
+    font-family: Pretendard-Regular;
+    line-height: 35px;
+    text-align: center;
+    position : fixed;
+    top: 550px;
+    left : 30%;
+    right : 30%;
+    transition: all 0.4s ease-in-out;
+    animation: ClickMe 1s linear infinite;
+
+}
+.langkingBox{
+    margin-top: 15px;
+}
+.lankingItem{
+    width : 100%;
+    height: 80px;
+    border-top: 1px solid #ccc;
+    margin-bottom: 1px;
+
+}
+
+.FindMeButton:active{
+    background-color : white;
+    color: #5E91FC;
+    border: 1px solid #5E91FC;
+}
+
+.chatingViewBox::-webkit-scrollbar{
+    display: none;
+}
+
+.MassageInput{
+    z-index: 999946874;
+    width: 100%;
+    height: 10%;
+
+    border-top: 1px solid #ccc;
+    
+}
+
+.Massageform{
+    width: 100%;
+    height: 100%;
+    display : flex;
+}
+
+#content{
+    
+    position: relative;
+    background-color: white;
+    width: 90%;
+    height: 100%;
+    font-size: 30px;
+    padding-left: 50px;
+    outline: none;
+    border: none;
+    font-family:Pretendard-Regular;
+}
+
+.btn-massage{
+    background-color: #5E91FC;
+    width: 10%;
+    height: 100%;
+    border: none;
+}
+
+.btn-massage svg{
+    width: 30px;
+    height: 30px;
+    fill: white;
+
+}
+
+.TalkTextBox{
+    width: 100%;
+    display : block;
+}
+
+
+
+.right{
+    float: right;
+    text-align: right;
+}
+
+.left{
+    float: left;
+    text-align: left;
+}
+.right .dd{
+    background-color: white;
+    margin-right: 10px;
+    padding: 5px;
+    color: #212121;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .2);
+}
+
+.left .dd{
+    background-color: #5E91FC;
+    color : white;
+    padding: 5px;
+    margin-left: 10px;
+    }
+
+.textBox{
+    display: block;
+    width: 100%;
+
+}
+
+
+.dd{
+    width: max-content;
+    display: inline-block;
+    padding-left: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 5px;
+    margin: 3px;    
+    border-radius: 4px;
+    font-family: NanumBarunpen;
+    font-size: 20px;
+}
+
+
+.listItem{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+    display : flex;
+    overflow : hidden;
+    position : relative;
+    background-color : white !important;
+
+}
+
+.listItem .title {
+    font-family: GmarketSansMedium;
+    font-weight: bold;
+    
+}
+
+.listItem:hover{
+    background-color: #eee;
+}
+.ListImg{
+    height: 50px;
+    width: 50px;
+    margin-left: 3px;
+    margin-right: 15px;
+    
+}
+.ListImg svg{
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.textbo{
+    width: 100%;
+    float: left;
+    height : 50px;
+    padding-top: 10px;
+    overflow-y: hidden;
+
+}
+
+.footerP{
+    font-weight: lighter;
+    font-family: Pretendard-Regular;
+    color: #888;
+}
+
+
+.menu_ul{
+    display: flex;
+    justify-content: space-around;
+    width : 100%;
+    height: 50px;
+
+    margin-top: 10px;
+    
+}
+
+.menu_li{
+
+    position: relative;
+    height : 100%;
+    width: 60px;
+    text-align: center;
+
+}
+
+.menu_li svg{
+    width: 25px;
+    height : 25px;
+    display : inline-block;
+    
+
+    fill: black;
+}
+
+
+.header_logo{
+    display: block;
+    
+    margin: auto;
+    object-fit: cover;
+    height: 70%;
+    margin-top: 10px;
+}
+
+.notRead{
+    position: absolute;
+    width: 20px;
+    height : 20px;
+    color: white;
+    background-color: red;
+    text-align: center;
+    border-radius: 100px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    right: 0;
+}
+
+.notReadMa{
+    color: black;
+    font-weight: bold;
+}
+.menu_p{
+    margin-top: 3px;
+    font-size: 0.7rem;
+    text-align: center;
+    width: 100%;
+    font-family: LeferiPoint-WhiteObliqueA;
+}
+.active svg{
+    fill: #5E91FC;
+}
+.active .menu_p{
+    color: #5E91FC;
+}
+.ChatStartButton{
+    width: 100px;
+    height : 100px;
+    border-radius:200px;
+    text-align: center;
+    background-color: #F3ECFF;
+    line-height: 50px; 
+    margin: auto;   
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    line-height: 140px;
+    overflow : hidden;
+}
+.ChatStartButton:hover{
+    background-color: #7872A5;
+
+}
+.ChatStartButton:hover svg{
+    fill: white;
+}
+.ChatStartButton svg{
+    width: 50px;
+    height: 50px;
+    fill: #5E91FC;
+    transition: all 0.4s ease-in-out;
+}
+
+.ButtonBox{
+    display: inline-block;
+    text-align: center;
+
+}
+
+.ButtonBox p{
+    color: #C069D8;
+    font-family: LeferiPoint-WhiteObliqueA;
+}
+
+.startbutton:hover{
+    background-color: #F3ECFF;
+}
+.startbutton:hover svg{
+    fill: #7872A5;
+}
+
+.marginBox{
+    margin-top: 230px;
+}
+.SearchForm{
+    width: 100%;
+    display: flex;
+    
+}
+#ThisIsSearchInput{
+    display: inline-block;
+    height : 50px;
+    outline: none;
+    width: 83%;
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0,0, .2);
+    
+    font-size: 1.07rem;
+    margin: 0;
+    padding-left: 20px;
+    color: #777;
+    font-family: LeferiPoint-WhiteObliqueA;
+}
+
+.ThisIsSearchButton{
+    width: 17%;
+    height : 50px;
+    display: inline-block;
+    
+    border: none;
+    background-color: #5E91FC;
+    text-align: center;
+}
+.ThisIsSearchButton svg{
+    width: 25px;
+    height: 25px;
+    fill: white;
+}
+
+.hidden{
+    display: none;   
+}
+
+#MypageBOcxxx{
+    background-color: #eee;
+}
+
+#icon2{
+    right: 40px;
+    fill: black;
+    z-index: 1000;
+}
+.userImgBox img{
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 3px rgb(0 0 0 / 20%);
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 100px;
+    
+}
+.userImgBox{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.UserInforMationBox{
+    width: 320px;
+    margin: auto;
+    height: 100px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+    background-color: white;
+
+}
+
+.cardHeaderIMG{
+    width: 40px;
+    height : 40px;
+    box-shadow: 0 0 3px rgba(0, 0, 0,0.2);
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 100px;
+}
+.userName{
+    float: left;
+    margin-top: 25px;
+    font-weight: bold;
+
+    font-family : leferiPoint-WhiteObliqueA;
+}
+.date{
+    float: left;
+    margin-top: 40px;
+    font-size: 0.8rem;
+    color: #777;
+}
+.InformationText{
+    position: relative;
+    width: 100px;
+    height : 70px;
+    display:  inline-block;
+    
+    margin-left: 12px;
+}
+.InformationText p{
+    position : absolute;
+    float: left;
+}
+#headerBoxx{
+    border-bottom: 1px solid #eee;
+    height: 6.9%;
+}
+
+.UserInforMationBox{
+    width: 100%;
+    height : 100%;
+ 
+}
+.otherUserName{
+    position : absolute;
+    width: 70%;
+    left: 40%;
+    top : 15px;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .header p{
+        font-size: 1.1rem;
+    }
+
+    .header .ss{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top : 35%;
+        left: 20px;
+    
+    }
+
+    .btn-massage svg{
+        width: 20px;
+        height: 20px;
+        fill: white;
+    
+    }
+    #content{
+        width: 80%;
+        font-size: 1.1rem;
+        padding-left: 20px;
+    }
+    .btn-massage{
+        width: 20%;
+    }
+
+    .dd{
+        font-size: 1.1rem;
+    }
+}
+
+.ThisIsSearchBox{
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.PointBox{
+    width: 90%;
+    display: block;
+    margin  :auto;
+    height: 40px;
+    background-color: white;
+    margin-top: 20px;
+    border : 2px solid #5E91FC;
+    border-radius: 6px;
+}
+
+.FormHeader{
+    padding-left: 0 !important;
+    text-align: center;
+    
+}
+
+.ShowImgBoxx{
+    width: 100px;
+    height : 100px;
+    object-fit: cover;
+    display : block;
+    margin : auto;
+    overflow : hidden;
+}
+
+.ShowImgBoxx img{
+    object-fit: cover;
+    width: 100px;
+    height : 100px;
+    overflow : hidden;
+    border-radius: 100px;
+}
+.registerForm{
+    margin-top : 20px;
+}
+
+.TextInputFormBOx input{
+
+    display : block;
+    width : 70%;
+    height : 30px;
+    padding-left: 20px;
+    margin: auto;
+    margin-top: 20px;
+    border : none;
+    border-bottom: 1px solid #aaa;
+    outline : none;
+    font-size: 15px;
+    font-family: Pretendard-Regular;
+    transition : all 0.4s ease-in-out;
+}
+
+.TextInputFormBOx input:focus{
+    border-bottom: 1px solid #777;
+    padding-left: 50px;
+}
+
+.TextInputFormBOx select{
+    width : 35%;
+    border : none;
+    border-bottom: 1px solid #aaa;
+
+}
+
+
+.subMitButton{
+    width: 80px;
+    height : 30px;
+    background-color: #5E91FC;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin-top: 10px;
+    font-family: leferiPoint-WhiteObliqueA;
+    font-size: 16px;
+    line-height: 30px;
+}
+.IdCheck{
+    width: 50px;
+    height : 25px;
+    background-color: #5E91FC;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin-top: 10px;
+    
+    font-family: leferiPoint-WhiteObliqueA;
+}
+
+.SelectLabel{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    background-color: #f3f4f5;
+    border-radius: 12px;
+    margin: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.8s ease-in-out;
+}
+
+#stu:checked ~ .SelectThisBox #stuLabel{
+    background-color: #5E91FC;
+}
+#stu:checked ~ .SelectThisBox #stuLabel svg{
+    fill: white;
+}
+#stu:checked ~ .SelectThisBox #stuLabel p{
+    color: white;
+}
+
+
+#other:checked ~ .SelectThisBox #otherLabel{
+    background-color: #5E91FC;
+}
+#other:checked ~ .SelectThisBox #otherLabel svg{
+    fill: white;
+}
+#other:checked ~ .SelectThisBox #otherLabel p{
+    color: white;
+}
+
+
+.SelectLabel p{
+    font-family: leferiPoint-WhiteObliqueA;
+    margin-top: 10px;
+
+}
+
+.SelectLabel svg{
+    margin-top: 10px;
+    width: 80px;
+    height : 80px;
+    fill: #5E91FC;
+}
+.SelectThisBox{
+    margin-top: 20px;
+}
+
+.margintop{
+    margin-top: 40px;
+}
+
+.nadomola{
+    
+    width: 90%;
+    display: block;
+    margin: auto;   
+    margin-top : 170px;
+}
+
+.linkATag{
+    display: block;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #888;
+    font-family: leferiPoint-WhiteObliqueA;
+
+}
+
+.linkATag:hover{
+    color: black;
+}

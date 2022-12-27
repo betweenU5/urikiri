@@ -1,0 +1,11 @@
+[
+      {
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target": {
+          "namespace": "android_app",
+          "package_name": "kr.hs.gbsw.urikiri.twa",
+          "sha256_cert_fingerprints":
+            ["FE:EC:BB:22:4B:7A:ED:83:5A:78:AC:6D:55:54:5C:31:2A:3B:75:08:FD:C8:18:BA:7F:D4:7C:5A:A0:DC:84:36"]
+        }
+      }
+    ]

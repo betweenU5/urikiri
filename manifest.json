@@ -1,0 +1,27 @@
+{
+    "background_color": "#ffffff",
+    "description": "2022년 2학기 캡스톤 프로젝트 산출물입니다",
+    "dir": "ltr",
+    "display": "standalone",
+    "name": "우리끼리 함께하는 공부",
+    "orientation": "portrait",
+    "scope": "/",
+    "short_name": "우리끼리",
+    "start_url": "/publicing/php/page/main.php",
+    "theme_color": "#ffffff",
+    "categories": [
+      "education",
+      "social"
+    ],
+    "screenshots": [],
+    "icons": [
+      {
+        "src": "/source/img/logo.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "shortcuts": [],
+    "lang": "ko",
+    "prefer_related_applications": false
+  }

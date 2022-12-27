@@ -1,0 +1,267 @@
+/*기본*/
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    overflow-x: hidden;
+    height: 100%;
+
+}
+
+html{
+    height: 100%;
+}
+.hidden{
+    display: none !important;
+}
+/*폰트*/
+
+/*메인 폰트*/
+@font-face {
+    font-family: 'MonoplexKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-kr@1.0/MonoplexKR-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+/*제목, 메뉴 등 큰 텍스트에 사용*/
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*해쉬태그 등 부가적 요소에 사용*/
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*헤더 부분*/
+
+.header{
+    width: 100%;
+    height: 28px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position:  relative;
+    background-color : #f9fafb;
+}
+
+.HeaderLogoIcon{
+    width: 30px;
+    height: 30px;
+}
+
+.HeaderSiteName{
+    height: 30px;
+    line-height: 30px;
+}
+
+.FirstHeaderElement{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.FirstHeaderElement a img{
+    padding-left: 12px;
+}
+.FirstHeaderElement a p{
+    font-size: 22px;
+    margin-left: 8px;
+    font-weight: bold;
+    font-family: GmarketSansMedium;
+}
+.FirstHeaderElement a svg{
+    width: 30px;
+    height: 30px;
+}
+#User img{  
+    border-radius: 50%;
+    
+    padding-left: 0 !important;
+    
+}
+#User {
+    width: 30px;
+    height: 30px;
+    background-color: #eff1ee;
+    border-radius: 50%;
+    padding: 1px;
+    margin-right: 10px !important;
+    margin-left: 10px;
+
+}
+
+#User img{
+    object-fit: cover;
+}
+
+#menu{
+    margin-right: 10px !important;
+
+}
+.LeftBox{
+    width: 50%;
+    display: flex !important;
+    justify-content: flex-start;
+}
+.LeftBox a{
+    display: flex !important;
+
+}
+
+.RightBox{
+    width: 50%;
+    display: flex !important;
+    justify-content: flex-end;
+}
+
+.ThisIsMenuBox{
+    padding-top: 20px;
+    position : absolute;
+    transform : translateX(-110%);
+    transition: all 0.5s ease;
+    width: 250px;
+    height: 100%;
+    z-index: 300;
+    background-color: #f9fafb;
+    
+    transition : all 0.3s ease-in-out;
+}
+
+.ShowmenuButton{
+    font-family: IBMPlexSansKR-Regular;
+    display: block;
+}
+
+.ThisIsMenuBox .MenuItem{
+    display: block;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    font-family: GmarketSansMedium;
+    color: #5E91FC;
+    background-color: white;
+
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition : all 0.3s ease-in-out;
+    text-align: center;
+}
+
+.ThisIsMenuBox a:hover{
+    background-color : #5E91FC; 
+    color: white;
+}
+
+#IfFocus{
+    width: 0;
+    height: 0;
+    border: none;
+    overflow : hidden;
+    position: absolute;
+}
+
+.body{
+    width: 100%;
+    height: 100% !important;
+    background-color: black;
+    position: absolute;
+    opacity: 0.5;
+    display : none;
+    z-index: 234;
+}
+
+.footer{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.footerP{
+    font-family: IBMPlexSansKR-Regular;
+    color: #999;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.footer a{
+    font-family: IBMPlexSansKR-Regular;
+    color: #999;
+    text-decoration: underline;
+}
+
+.footer + svg{
+    width: 35px;
+    height: 35px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+@media (min-width: 1024px) {
+    body {
+        background-color: #f3f4f5;
+    }
+    
+    .SectionBox{
+        width: 1024px !important;
+        margin: auto;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+
+    }
+
+    .SlideBox{
+        margin-top: 12px;
+        height: 400px !important;
+        object-fit:cover;
+    }
+
+    .SlideUl{
+        width: 100%;
+        height: 400px !important;
+        list-style-type: none;
+        white-space: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+    }
+    .SlieLi{      
+        width: 100%;
+        height: 400px !important;
+        display: inline-block; 
+        list-style:none; 
+        scroll-snap-align:  center;
+    }
+    .SlideImg{
+        width: 100%;
+        height: 400px !important;
+        display: block;
+    }
+    
+
+
+
+    .normalText{
+        width: 100% !important;
+        text-align: center !important;
+    }
+    .ListBox a{
+        width: 100% !important;
+    }
+
+}
+.ListBox a{
+    width: 100% !important;
+}

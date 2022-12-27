@@ -1,0 +1,1203 @@
+/*폰트*/
+
+/*메인 폰트*/
+@font-face {
+    font-family: 'MonoplexKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-kr@1.0/MonoplexKR-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+/*제목, 메뉴 등 큰 텍스트에 사용*/
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*해쉬태그 등 부가적 요소에 사용*/
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.SectionBox{
+    width: 100%;
+    background-color: #f3f4f5;
+    overflow-x: hidden;
+}
+.QuestionSelectBox{
+    width: 100%;
+    height : 400px;
+    padding-top: 30px;
+    text-align: center;
+    border-radius:  15px 15px 15px 15px;
+    background-color: white;
+    margin: auto;
+    margin-top: 15px;
+
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+}
+.QuestionSelectBox a{
+    width: min-content;
+    height: min-content;
+    display: inline-block;
+}
+.SlideBox{
+    width: 100%;
+    height: 200px;
+}
+
+.SlideUl{
+    width: 100%;
+    list-style-type: none;
+    white-space: nowrap;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+.SlieLi{      
+    width: 100%;
+    display: inline-block; 
+    list-style:none; 
+    scroll-snap-align:  center;
+}
+.SlideImg{
+    width: 100%;
+    height: 200px;
+    display: block;
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+
+.SelectBox{
+    width: 150px;
+    text-align: left;
+    display: inline-block;
+    align-items: center;
+    background-color: white;
+    height: 70px;
+    border-radius: 8px;
+    position: relative;
+    margin: 4px;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eee;
+    transition: all 0.1s ease-in-out;
+}
+
+.SelectBox:hover{
+    background-color: #f3f4f5;
+}
+
+.SelectQImg{
+    width: 30px;
+    height: 30px;
+}
+
+
+.SelectBox img{
+    display: inline-block;  
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.SelectBox p{
+    display: inline-block;
+    height : 30px;
+    position : absolute;
+    left : 50px;
+    font-size: 17px;
+    height: 70px;
+    font-family: GmarketSansMedium;
+    line-height: 70px;
+}
+
+.normalText{
+    margin-top: 40px;
+    font-family: S-CoreDream-3Light;
+    font-weight: bold;
+    color: #5E91FC;
+    text-align: left;
+    
+}
+.SelectOneBox{
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0, .1);
+    margin-top: 30px;
+    border-radius: 15px 15px 15px 15px;
+}
+.ThisVoteSess{
+    width: 70px;
+    height: min-content;
+    display: block;
+    border: 1px solid #4778ff;
+    border-radius: 12px;
+    padding: 2px;
+    margin: auto;
+    font-family: S-CoreDream-3Light;
+    font-size: 0.9rem;
+    color: #4778ff;
+ 
+}
+.VsBar{
+    width: 90%;
+    height: 20px;
+    margin: auto;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    border-radius: 100px;
+    display: flex; 
+}
+.VsBar .barItem{
+    width: 50%;
+    display: inline-block;
+    height: 20px;
+    color: white;
+    font-family: S-CoreDream-3Light;
+    font-size: 0.9rem;
+}
+#Voteitem1{
+    background-color: #5E91FC;
+    border-radius: 100px 0 0 100px;
+}
+
+#Voteitem2{
+    background-color: #B8264B;
+    border-radius: 0 100px 100px 0;
+
+}
+.ItemBox{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    font-family: GmarketSansMedium;
+}
+.VoteItem{
+    width: 50%;
+}
+.votebutton{
+    width: 70px;
+    height : 70px;
+    line-height: 70px;
+    border-radius: 100px;
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+.votebutton:hover{
+    background-color: #eee;
+}
+
+.otherItemBox{
+    width: 100%;
+    height: 720px;
+    background-color: white;
+    margin-top: 15px;
+}
+.ItemHeader{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    
+}
+.ItemHeader div{
+    width: 50%;
+    font-family: GmarketSansMedium;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+}
+
+#Text1{
+    text-align: left;
+}
+#Text2{
+    text-align: right;
+}
+#Text2 a{
+    color: #888;
+    font-weight:lighter;
+    font-size:0.9rem;
+}
+.ListBox{
+    width:90%;
+    margin: auto;
+}
+.listItem{
+    width: 100%;
+    height: 87px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color : white;
+    border-bottom: 1px solid #eee;
+}
+.ItemNum{
+    margin-right: 5px;
+    font-size: 1.1rem;
+    display: inline-block;
+    color: #5E91FC;
+    font-family: GmarketSansMedium;
+}
+.ItemTitle{
+    padding-left: 7px;
+    font-family: GmarketSansMedium;
+    height: 24px;
+    display: inline-block;
+    overflow: hidden;
+    width: 90%;
+}
+.ListItemHeader{
+    display: flex;
+    align-items: center;
+}
+.ItemText{
+    padding-left: 22px;
+    margin-top: 5px;
+    color: #999;
+    font-family: S-CoreDream-3Light;
+    font-size: 0.9rem;
+    height: 20px;
+    width: 70%;
+    overflow: hidden;
+}
+.ListItemFooter{
+    width: 100%;
+    padding-left: 22px;
+    display: flex;
+    font-family: IBMPlexSansKR-Regular;
+    margin-top: 20px;
+}
+#footerItem1{
+    margin-right: 10px;
+}
+#footerItem2{
+    margin-left: 10px;
+}
+.TotalBox{
+    margin-top: 15px;
+    background-color: white;
+    width: 100%;
+    height: 150px;
+}
+.TotalValueBox{
+    width: 90%;
+    margin: auto;
+    font-family: IBMPlexSansKR-Regular;
+}
+.TotalValueBox div{
+    text-align: center;
+    margin: 4px;
+
+}
+.TotalValueBox div p{
+    display: inline-block;
+}
+
+.TotalValueBox div span{
+    color: #5E91FC;
+    font-weight: bold;
+}
+.TotalBoxHeaderTitle{
+    text-align: center;
+    font-family: GmarketSansMedium;
+    font-weight: bold;
+    padding-left: 22px;
+}
+
+/*로그인 페이지*/
+
+.loginFormBox{
+    width: 100%;
+    height: 800px;
+    margin: auto;
+    background-color: white;
+    
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.FormBox input{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 80%;
+    display: block;
+    margin: auto;
+    outline : none;
+    font-family: S-CoreDream-3Light;
+    font-size: 1.02rem;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    margin-bottom: 40px;
+    transition: all 0.5s ease;
+}
+
+.FormBox input:focus{
+    border-bottom: 1px solid black;
+}
+
+.FormTItle{
+    display : block;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 42px;
+    font-family: GmarketSansMedium;
+    font-size: 1.1rem;
+
+}
+.SubmitButton{
+    width : 200px;
+    height : 50px;
+    display : block;
+    font-size: 1.02rem;
+    font-family: S-CoreDream-3Light;
+    background-color: #5E91FC;
+    border: none;
+    outline: none;
+    margin : auto;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+.subText{
+    width: 100%;
+    display : block;
+    font-size : 0.9rem;
+    color: #999;
+    text-decoration: underline;
+    font-family: S-CoreDream-3Light;
+    margin: auto;
+    text-align: center;
+    margin-top : 20px;
+    
+}
+
+/*회원가입*/
+.ShowImgBoxx{
+    text-align: center;
+    
+
+}
+.ShowUserImgBox{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+}
+.ShowUserImgBox2{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+#registerBox{
+    height: 670px;
+}
+.SelectUserImg{
+    width: 100px;
+    background-color: #5E91FC;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #f9fafb;
+    font-family: IBMPlexSansKR-Regular;
+    border-radius: 6px;
+    
+}
+
+
+/*마이페이지*/
+.ProfileBox{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    background-color: white;
+    margin-bottom: 5px;
+}
+.ShowUserImgBoxx{
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    
+}
+.hashTagBox{
+    
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+.TagLabel{
+    display: inline-block;
+    background-color : #eee;
+    padding: 5px;
+    font-size: 0.9rem;
+    border-radius: 12px;
+    margin : 3px;
+    margin-bottom: 5px;
+    font-family: S-CoreDream-3Light;
+    box-shadow: 0px 0px 2px rgba(0,0,0,0.1);
+}
+
+.profileTeextBox{
+
+    margin-top: 10px;
+    text-align: center;
+    
+}
+.ProfileUsername{
+    font-family: GmarketSansMedium;
+    width: 100%;
+}
+.ProfileUserId{
+    font-family: S-CoreDream-3Light;
+    font-size: 0.9rem;
+
+}
+.LankTitleName{
+    width: 120px;
+}
+.lankPotin{
+    width: 100px;
+}
+.pointBox{
+    width: 100%;
+    height: 120px;
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.ProgressBar{
+    width: 300px;
+    height: 3px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f3f4f5;
+    margin: auto;
+}
+.YourPointBar{
+    width: 180px;
+    height: 3px;
+    background-color: #5E91FC;
+}
+.progressTExtBox{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+}
+
+.progressTExtBox p{
+    width: 50%;
+    font-family: S-CoreDream-3Light;
+    font-size: 0.9rem;
+    color: #777;
+    text-align: center;
+}
+.nextText{
+    
+    margin-right: 10px;
+}
+.ProgressText{
+    margin-left: 10px;
+}
+.LinkToLanking{
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    font-family: S-CoreDream-3Light;
+    font-size: 0.9rem;
+    color: #888;
+    text-decoration: underline;
+}
+
+.acodianItem{
+    width: 100%;
+    background-color: white;
+    
+}
+.acodianHeader{                     
+    width: 50%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+.acoTitle{
+    text-align: center;
+    color: #4778ff;
+    font-family: GmarketSansMedium;
+    transition: all 0.5s ease-in-out;
+}
+.acodianBody{
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    background-color: #f3f4f5;
+    
+}
+
+.acodianBody a{
+    width: 100%;
+}
+.ShowMyListThisBox{
+    width: 100%;
+    display: flex;
+}
+.myListItem{
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    margin-bottom: 10px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+.QsTitle{
+    font-family: GmarketSansMedium;
+    padding-top: 15px;
+}
+.dateText{
+    font-family: S-CoreDream-3Light;
+    font-size: 0.8rem;
+    color: #888;
+    text-align: left;
+}
+.buttonA{
+    display: block;
+    margin: auto;
+    font-size: 1.1rem;
+}
+.LogoutButton{
+    width: 120px;
+    display: block;
+    margin: auto;
+    border: none;
+    outline: none;
+    height : 40px;
+    background-color : #dc3545;
+    border-radius : 12px;
+    color: white;
+    font-family: S-CoreDream-3Light;
+
+}
+.otherBox{
+    
+    width: 100%;
+    height : 100px;
+    background-color: white;
+}
+.MoreBox{
+    width: 100%;
+    
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: GmarketSansMedium;
+    color: #666;
+    font-size: 2rem;
+}
+.profileListItem{
+    display : block;
+    padding-left: 22px;
+    height: 20px;
+    overflow: hidden;
+    width: 90%;
+}
+
+
+
+/*게시글 목록 페이지*/
+.SearchInputTag{
+    width: 100%;
+    border : none;
+    outline: none;
+    background-color: white;
+    height: 40px;
+    border-bottom: 1px solid #eee;
+    padding-left: 20px;
+    font-family: S-CoreDream-3Light;
+    font-size: 15px;
+}
+.acodianBody{
+    scroll-snap-type: y mandatory;
+}
+
+.acodianBody a{
+    scroll-snap-align:  start;
+}
+
+.listItem{
+    scroll-snap-align:  start;
+}
+.boardItem{
+    width: 100%;
+    height: 145px;
+    background-color: white;
+    margin-top: 5px;
+}
+.boardItem p{
+    padding-left: 22px;
+}
+.boardListBox a .listItem{
+    margin-bottom: 5px;
+}
+.pip{
+    width : 4px;
+    height: 4px;
+    background-color : #4778ff;
+    display: inline-block;
+    border-radius: 50px;
+    margin-bottom: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.BoardItemTime{
+    font-size: 0.9rem;
+    color: #888;
+    font-family: S-CoreDream-3Light;
+}
+.boardListBox a{
+    width: 100%;
+
+}
+/*본문 부분*/
+.boardBox{
+    width: 100%;
+    background-color: white;
+    margin-top: 15px;
+    border-top: 1px solid #eee;
+    margin-bottom: 11px;
+    padding-bottom: 50px;
+}
+
+.BoradTitle{
+    width: 80%;
+    font-size: 1.2rem;
+    font-family: GmarketSansMedium;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+.subInfoText{
+    font-size: 0.9rem;
+    color: #888;
+    font-family: S-CoreDream-3Light;
+    padding-left: 30px;
+    padding-top: 5px;
+    background-color: white;
+}
+.BoardTextArea{
+    width: 75%;
+    resize: none;
+    background-color: white;
+    border: none;
+    display: block;
+    margin-top: 20px;
+    text-align: justify;
+    font-size: 1.05rem;
+    font-family: S-CoreDream-3Light;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+.DoYouAnswerMe{
+    width: 100%;
+    height :70px;
+    background-color: white;
+    margin-bottom: 10px;
+    display: flex;
+    align-items:  center;
+}
+.DoYouAnswerMe img{
+    width: 50px;
+    height : 50px;
+    padding-top : 10px;
+    margin: 0;
+    margin-left: 20px;
+}
+.DoYouAnswerMe div{
+    width: 50%;
+    height: 70px;
+}
+.DoYouAswText{
+    line-height: 70px;
+    margin-left: 15px;
+    width: 400px;
+    font-family: S-CoreDream-3Light;
+}
+
+.otherBoxx{
+    display: flex;
+    align-items: center;
+    width: 70% !important;
+}
+
+.otherBoxx img, p{
+    display: inline-block;
+}
+
+.ButtonBox{
+    text-align: right;
+}
+.AnswerButton{
+    width : 90px;
+    height : 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 30px;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    background-color: #5E91FC;
+    color: white;
+    font-family: S-CoreDream-3Light;
+}
+
+.DoYouAnswerMe img, p, a{
+    display: inline-block;
+}
+
+
+.SmallTitleBox{
+    background-color: white;
+    padding-left: 20px;
+
+    font-size: 15px;
+    font-family: GmarketSansMedium;
+    border-bottom: 1px solid #ccc;
+}
+
+.SmallTitleItemBo{
+    width: max-content;
+    height: 60px;
+    line-height: 60px;
+    padding-right: 20px;
+    border-right: 1px solid #ccc;
+    background-color: white;
+    
+}
+
+.AnswerItem{
+    width: 100%;
+    background-color: white;
+    margin-bottom : 11px;
+    padding-bottom: 20px;
+}
+.dd{
+    padding-left: 30px;
+}
+#DoYouAswText{
+    width: 100%;
+
+}
+
+/*랭킹*/
+.langkingBox{
+    border-top: 1px solid #ccc;
+}
+.LankItemBox{
+    width: 100%;
+    margin-top: 7px;
+}
+.LankItemBox a{
+    width: 100%;
+}
+.LankItem{
+    width : 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    height : 90px;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+    position : relative;
+    display : flex;
+    align-items: center;
+}
+.LankNum{
+    color: #4778ff;
+    font-size: 16px;
+    font-family: GmarketSansMedium;
+    font-weight: bold;
+    height : 90px;
+    width: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.LankTitleName{
+    margin-left: 20px;
+    font-family: GmarketSansMedium;
+    font-size: 18px;
+}
+.lankPotin{
+    margin-left: 20px;
+    font-family: IBMPlexSansKR-Regular;
+    font-size: 0.9rem;
+    color: #888;
+}
+/*프로필*/
+.profileImgBox{
+    background-color: white;
+    padding-top : 40px;
+}
+.profileImg{
+    width: 120px;
+    height : 120px;
+    border-radius: 100px;
+    display: block;
+    margin: auto;
+    padding: 1px;
+    background-color: #EDEEFF;
+}
+
+
+/*태그선택페이지*/
+.SectionForm{
+    width : 100%;
+    background-color: white;
+    text-align: justify;
+}
+.SectionForm div{
+    display: inline-block;
+    width: 29%;
+    height : 50px;
+    margin: 2%;
+    border-radius: 12px 12px 12px 12px;
+    position: relative;
+    background-color: white;
+}
+
+.MySelectA{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+    border-radius: 12px 12px 12px 12px;
+    display: block;
+    width : 100%;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.Taglabel{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border-radius: 12px 12px 12px 12px;
+    color: white;
+    font-size: 0.9rem;
+    transition: all 0.5s ease-in-out;
+}
+.TagText{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    display: block;
+    width: 100%;
+    height : 50px;
+    line-height: 50px;
+    font-size: 0.9rem;
+    background-color: black;
+    color: white;
+    opacity: 0.5;
+    font-family: IBMPlexSansKR-Regular;
+    border-radius: 6px 6px 6px 6px;
+    transition: all 0.5s ease-in-out;
+}
+.SectionForm div input:checked + label{
+    opacity: 1;
+    height : 50px;
+}
+.SectionForm div input:checked + label .TagText{
+    height : 50px;
+    opacity: 0.9 ;
+    background-color: #4778ff ;
+    border-radius: 6px 6px 6px 6px;
+    line-height: 50px;
+    
+}
+.FormTile{
+
+    background-color: white;
+    text-align: center;
+    font-family: S-CoreDream-3Light;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+}
+
+.SelectSubmitButton{
+    width: 100%;
+    margin: auto;
+    height : 50px !important;
+    text-align: center;
+    line-height: 50px !important;
+    display: block;
+    border: none;
+    outline: none;
+    font-family: S-CoreDream-3Light;
+    background-color: #5E91FC;
+    color: whitesmoke;
+    padding-bottom: 15px;
+    margin-bottom: 10px !important;
+}
+.ChatListBoxx{
+    background-color: #f3f4f5;
+    width: 100%;
+}
+.ChatListBoxx a{
+    display: block;
+    width: 100%;
+}
+.ChatListItem{
+    width: 100%;
+    background-color: white;
+    height: 80px;
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+}
+.ChatListItemImg{
+    width: 55px;
+    height : 55px;
+    border-radius: 100px;
+
+}
+.ChatListItemImgBox{
+    width: 55px;
+    height : 55px;
+    background-color: #ccc;
+    padding: 1px;
+    border-radius: 100px;
+    margin-left: 10px;
+}
+.ChatListItemOtherUserName{
+    margin-left: 15px;
+    width: 70%;
+}
+.OtherName{
+    font-weight: bold;
+    font-family: IBMPlexSansKR-Regular;
+    width: 100%;
+}
+.OtherMess{
+    margin-top: 3px;
+    font-family: IBMPlexSansKR-Regular;
+    font-size: 0.9rem;
+    color: #777;
+}
+.ChatListItemdate{
+    width: 30%;
+    font-family: IBMPlexSansKR-Regular;
+    font-size: 0.9rem;
+    color: #777;
+    text-align: right;
+    padding-right: 15px;
+
+}
+.NewMess{
+    color: black;
+    font-weight: bold;
+    font-family: IBMPlexSansKR-Regular;
+}
+.BUtSure{
+    height: 70px;
+    margin-top: 0px;
+}
+.WantChatingButton{
+    display: block;
+    width: 100%;
+    background-color: white;
+    padding-top : 20px;
+    padding-bottom: 20px;
+}
+.ButtonGoToDiv{
+    width: max-content;
+    margin: auto;
+    background-color: white;
+    padding: 7px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+}
+.ButtonImg{
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: auto;
+    
+}
+.ButtonTExt{
+    font-family: IBMPlexSansKR-Regular;
+    font-size: 0.8rem;
+
+}
+.InputLabelFile{
+    width: 100px;
+    height: 40px;
+    border: 1px solid #5E91FC;
+    padding: 5px;
+    color: #4778ff;
+    font-family: GmarketSansMedium;
+    border-radius: 12px;
+    display: block;
+    margin-left: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.filename{
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+    font-family: S-CoreDream-3Light;
+    margin-bottom: 30px;
+}
+.FormTitleP{
+    width: 90%;
+    padding-left: 30px;
+    font-family: GmarketSansMedium;
+    margin-bottom: 12px;
+}
+.codeTextArea{
+    width: 90%;
+    border : 1px solid #ccc;
+    outline: none;
+    resize: none;
+    display: block;
+    height : 120px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius : 6px;
+    font-family: S-CoreDream-3Light;
+    color: #999;
+}
+
+.SearchPressButton{
+    width : 100%;
+    height: 30px;
+    border : none;
+    outline : none;
+    background-color : #5E91FC;
+    color : white;
+    font-family: S-CoreDream-3Light;
+    margin-bottom: 12px;
+}
+
+.BoradShowImg{
+    width: 90%;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    margin-top: 20px;
+    box-shadow: 0 0 1px 1px rgba(0,0,0, .1);
+}
+.DoYouAswText{
+    display: block;
+}
+
+.ischeckButton{
+    width: 70px;
+    padding: 5px;
+    border: #4778ff 1px solid;
+    color: #4778ff;
+    font-family: IBMPlexSansKR-Regular;
+    background-color: white;
+}
+
+.TextDate{
+    color: #999;
+    font-family: S-CoreDream-3Light;
+    font-size: 0.9rem;
+    margin-left: 22px;
+}
+
+.chatingButtonBox{
+    background-color: white;
+    width: 100%;
+
+}
+
+.chatingButtonBox a{
+    display: block;
+    width: 72px;
+    height: 72px;
+    line-height: 72px;
+    margin : auto !important;
+    background-color: #ccc;
+    border-radius: 50px;
+}
+
+.chatingButton{
+    width : 70px !important;
+    height: 70px !important;
+    border-radius: 50px;
+    border : none;
+    outline: none;
+    display : block;
+    margin: auto;
+    background-color: #5E91FC;
+    color: white;
+    font-family: S-CoreDream-3Light;
+    transition: all 0.4s ease-in-out;
+}
+
+.chatingButton:active{
+    background-color: #4778ff;
+}
+.chatingButton:hover{
+    background-color: #4778ff;
+}
+
+.square{
+
+    border:0;
+    width:80px;
+    padding:0px;
+    margin-top: 350px;
+    margin-left: calc(50% - 40px);
+    margin-left: -webkit-calc(50% - 40px);
+    margin-left: -moz-calc(50% - 40px);
+    background : white;
+  }
+  .loadingPage{
+    width : 100%;
+    height: 100%;
+    background:white;
+    position: absolute;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+  
+  .spin {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border:dashed 5px #4778ff;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+  }
+  
+  @-webkit-keyframes spin {
+    from   {  -webkit-transform: rotate(0deg); }
+    to   {  -webkit-transform: rotate(360deg); }
+  }
