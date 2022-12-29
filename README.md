@@ -131,13 +131,13 @@ MYSQL
 - 타 교과 분야에서 사용할 수 있도록 개발
 
 깃허브 저장소 주소
-- ...?
+- https://github.com/betweenU5/urikiri
 
 실행 주소
 - https://urikiri.gbsw.hs.kr/publicing/php/page/main.php
 
 앱 링크
-- ㅁ?ㄹ
+- https://url.kr/dsgozp
 
 프로젝트 소개 영상
 - https://www.youtube.com/watch?v=d3u8C4B2QOE
